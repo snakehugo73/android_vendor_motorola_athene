@@ -902,3 +902,17 @@ PRODUCT_PACKAGES += \
     atfwd \
     DTVService \
     DTVPlayer
+
+# Moto Camera
+PRODUCT_COPY_FILES += \
+    vendor/motorola/athene/proprietary/etc/permissions/com.motorola.cameraone.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.cameraone.xml \
+    vendor/motorola/athene/proprietary/etc/permissions/com.motorola.motosignature.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.motosignature.xml \
+    vendor/motorola/athene/proprietary/etc/permissions/deviceowner-configuration-com.motorola.cameraone.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/deviceowner-configuration-com.motorola.cameraone.xml \
+    vendor/motorola/athene/proprietary/etc/permissions/privapp-permissions-com.motorola.cameraone.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.motorola.cameraone.xml \
+    vendor/motorola/athene/proprietary/etc/sysconfig/hiddenapi-whitelist-com.motorola.cameraone.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-whitelist-com.motorola.cameraone.xml \
+    vendor/motorola/athene/proprietary/framework/com.motorola.motosignature.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.motorola.motosignature.jar
+
+PRODUCT_PACKAGES += \
+    MotoSignatureApp \
+    MotCamera
+
