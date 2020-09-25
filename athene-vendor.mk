@@ -482,7 +482,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/vendor/lib/libchromatix_ov5693_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5693_hfr_120.so \
     vendor/motorola/athene/proprietary/vendor/lib/libchromatix_ov5693_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5693_liveshot.so \
     vendor/motorola/athene/proprietary/vendor/lib/libchromatix_ov5693_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5693_postproc.so \
-    vendor/motorola/athene/proprietary/vendor/lib/libchromatix_ov5693_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5693_snapshot.so
+    vendor/motorola/athene/proprietary/vendor/lib/libchromatix_ov5693_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5693_snapshot.so \
+    vendor/motorola/athene/proprietary/etc/permissions/privapp-permissions-athene.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-athene.xml
 
 # FM
 PRODUCT_COPY_FILES += \
