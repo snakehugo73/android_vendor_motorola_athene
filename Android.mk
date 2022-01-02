@@ -413,7 +413,7 @@ LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := DMConf nmigUpdateLight
+LOCAL_MODULE := DMConfigUpdateLight
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/app/DMConfigUpdateLight/DMConfigUpdateLight.apk
 LOCAL_MULTILIB := 32
