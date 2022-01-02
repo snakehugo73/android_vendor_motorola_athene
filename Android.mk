@@ -66,6 +66,7 @@ LOCAL_MODULE := vendor.qti.hardware.fm@1.0
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES_64 := proprietary/lib64/vendor.qti.hardware.fm@1.0.so
 LOCAL_SRC_FILES_32 := proprietary/lib/vendor.qti.hardware.fm@1.0.so
+LOCAL_SHARED_LIBRARIES := android.hidl.base@1.0 libc++ libc libcutils libdl libhidlbase libhidltransport libhwbinder liblog libm libutils
 LOCAL_MULTILIB := both
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -77,6 +78,7 @@ LOCAL_MODULE := libantradio
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES_64 := proprietary/lib64/libantradio.so
 LOCAL_SRC_FILES_32 := proprietary/lib/libantradio.so
+LOCAL_SHARED_LIBRARIES := libc++ libc libcutils libdl liblog libm libnativehelper
 LOCAL_MULTILIB := both
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -88,6 +90,7 @@ LOCAL_MODULE := libtime_genoff
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libtime_genoff.so
 LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libtime_genoff.so
+LOCAL_SHARED_LIBRARIES := libc++ libc libcutils libdl liblog libm
 LOCAL_MULTILIB := both
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -410,7 +413,7 @@ LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := DMConfigUpdateLight
+LOCAL_MODULE := DMConf nmigUpdateLight
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/app/DMConfigUpdateLight/DMConfigUpdateLight.apk
 LOCAL_MULTILIB := 32
